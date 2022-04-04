@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "RealtimeClient.SignalR": {
+      "commandName": "Project",
+      "commandLineArgs": "https://localhost:5001 vectorloop 1"
+    }
+  }
+}

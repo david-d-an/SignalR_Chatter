@@ -1,0 +1,90 @@
+﻿@page
+<div class="container" style="max-width: 100%;">
+    <div class="row mx-auto">
+        <div class="col-4"></div>
+        <div class="col-1">User</div>
+        <div class="col-3"><input type="text" id="userInput" disabled /></div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-6">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2">Space ID</div>
+                <div class="col-9">
+                    <input type="text" id="spaceInput1" value=""/>
+                    <input type="button" id="subscribeButton1" value="Subscribe to Space" />
+                    <input type="button" id="unsubscribeButton1" value="Unsubscribe" />
+                </div>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2">Message</div>
+                <div class="col-9">
+                    <input type="text" id="messageInput1" value=""/>
+                    <input type="button" id="sendButton1" value="Send Message" />
+                </div>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-11">
+                    <textarea readonly id="messagesList1" name="messagesList1" rows="6" cols="70"></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6">
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2">Space ID</div>
+                <div class="col-9">
+                    <input type="text" id="spaceInput2" value=""/>
+                    <input type="button" id="subscribeButton2" value="Subscribe to Space" />
+                    <input type="button" id="unsubscribeButton2" value="Unsubscribe" />
+                </div>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-2">Message</div>
+                <div class="col-9">
+                    <input type="text" id="messageInput2" value=""/>
+                    <input type="button" id="sendButton2" value="Send Message" />
+                </div>
+            </div>
+            <div class="row">&nbsp;</div>
+            <div class="row">
+                <div class="col-1"></div>
+                <div class="col-11">
+                    <textarea readonly id="messagesList2" name="messagesList2" rows="6" cols="70"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <ul id="connectionsList"></ul>
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/signalr/dist/browser/msgpack5.js"></script>
+<script src="~/js/signalr/dist/browser/signalr-protocol-msgpack.js"></script>
+<script src="~/js/signalrpage.js"></script>
+<script src="~/js/connections.js"></script>
+<script src="~/js/chat.js"></script>
