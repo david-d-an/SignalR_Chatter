@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.SignalR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using RealtimeServer.SignalR.Config;
 using RealtimeServer.SignalR.HubFilters;
 using RealtimeServer.SignalR.Hubs;
 using RealtimeServer.SignalR.Services.ConnectedUserService;
@@ -27,7 +28,8 @@ namespace RealtimeServer.SignalR
         public void ConfigureServices(IServiceCollection services)
         {
             string redisConnStr = 
-                Configuration.GetConnectionString("RedisConnection");
+                AppSettings.Config.GetConnectionString("RedisConnection");
+                // Configuration.GetConnectionString("RedisConnection");
 
             services.AddRazorPages();
 

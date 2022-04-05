@@ -4,6 +4,7 @@
     <TargetFramework>net6.0</TargetFramework>
     <UserSecretsId>75028751-b8fb-437f-b719-6a168bf983b8</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    <RootNamespace>RealtimeServer.SignalR</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

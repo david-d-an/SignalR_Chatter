@@ -12,7 +12,7 @@ namespace RealtimeClient.SignalR
     class Program
     {
         /********************************************************/
-        /* dotnet RealtimeClient.SignalR.dll                    */
+        /* dotnet RealtimeClient.dll                    */
         /* Argument:                                            */
         /*      [0] Server URL: https://localhost:5001          */
         /*      [1] Loop Indicator: loop                        */
@@ -26,7 +26,7 @@ namespace RealtimeClient.SignalR
             var argList = args.ToList();
             if (args.Length < 1)
             {
-                Console.WriteLine("Usage: dotnet RealtimeClient.SignalR.dll {ServerUrl} [loop] [listen]");
+                Console.WriteLine("Usage: dotnet RealtimeClient.dll {ServerUrl} [loop] [listen]");
                 return;
             }
 

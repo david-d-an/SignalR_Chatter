@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "RealtimeServer.SignalR": {
+    "RealtimeServer": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
